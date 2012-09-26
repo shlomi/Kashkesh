@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/regTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:inputType="textEmailAddress"
+        android:text="@string/registrationTitle" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/regTitle"
+        android:layout_marginTop="5dp"
+        android:hint="@string/compose_hint"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regEmail"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regEmail"
+            android:text="@string/registerBtn"
+            android:textSize="20dp"
+            android:clickable="false" 
+          ></Button>
+
+        
+         <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="@string/doneBtn" 
+            android:layout_below="@id/registerBtn"
+             />
+       
+         
+         <TextView
+        android:id="@+id/regResult"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/doneBtn"
+        android:text="Registration Result"
+         >
+
+    	</TextView>
+        </RelativeLayout>
+
+     
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, KashkeshActivity!</string>
+    <string name="app_name">Kashkesh</string>
+    <string name="sendBtn">Send</string>
+     <string name="recordBtn">Record</string>
+     <string name="cancelBtn">Cancel</string>
+      <string name="playBtn">Play</string>
+       <string name="recordsendBtn">Record</string>
+        <string name="compose_hint">john.smith@gmail.com</string>
+         <string name="registerBtn">Register</string>
+          <string name="registrationTitle">Email:</string>
+            <string name="addContactBtn">Add Contact</string>
+            <string name="addContacts">Add Contacts</string>
+             <string name="doneBtn">Done</string>
+              <string name="listenBtn">Listen</string>
+               <string name="friendName">Noam </string>
+               <string name="friendEmail">noamltaasan@gmail.com </string>
+               <string name="backBtn">Back </string>
+            
+            
+
+</resources>

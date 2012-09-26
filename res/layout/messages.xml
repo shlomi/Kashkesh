@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#C0C0C0" 
+     >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#737CA1"  
+        android:paddingTop="0dp" >
+        
+        <TextView
+            android:id="@+id/friendName"
+        	android:layout_width="fill_parent"
+        	android:layout_height="35dp"
+       		android:text="@string/friendName"
+       		android:textSize="30dp"
+       		android:textColor="#FFFFFF"
+        ></TextView>
+        <TextView
+            android:id="@+id/friendEmail"
+        	android:layout_width="fill_parent"
+        	android:layout_height="20dp"
+       		android:text="@string/friendEmail"
+       		android:textSize="15dp"
+       		android:layout_below="@+id/friendName"
+       		android:textColor="#FFFFFF"
+        ></TextView>
+       
+     </RelativeLayout>
+      
+    <ListView
+        android:id="@+android:id/list"
+        android:layout_width="match_parent"
+         android:layout_height="fill_parent"
+         android:layout_below="@+id/topBar"
+         android:background="#000000" 
+        >
+        
+    </ListView>
+    
+	<RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" 
+        
+         >
+        
+	     <Button
+            android:id="@+id/backBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="@string/backBtn" 
+            android:layout_alignParentLeft="true"   
+            ></Button>
+	    
+        <Button
+            android:id="@+id/recordsendBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:text="@string/recordsendBtn" 
+            android:layout_alignParentRight="true"     
+             />
+
+        <Button
+            android:id="@+id/listenBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/listenBtn"
+            android:textSize="20dp" />
+        
+        </RelativeLayout>
+
+</RelativeLayout>
